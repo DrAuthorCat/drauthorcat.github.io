@@ -1,0 +1,36 @@
+{
+  "shortStory": {
+    "title": "Short Story",
+    "items": [
+      {
+        "title": "1. I Killed A Fly",
+        "image": "fly_2.png",
+        "imageAlt": "A stitched line drawing of a fly and red thread on lined fabric.",
+        "route": "story-fly",
+        "description": "I said, as I stared at it lying there on my bathroom floor. A few seconds earlier, it was buzzing around. My annoyance is still fresh; I can remember each missed swing as it swirled around in the air. But now, I’m sitting next to it on my floor. It isn't moving anymore.",
+        "linkLabel": "[More..]"
+      },
+      {
+        "title": "1. The Taste Of Death",
+        "image": "craw.png",
+        "imageAlt": "A dark photograph of a small ceramic plate on green fabric.",
+        "route": "story-taste",
+        "description": "The storm had not waned for hours, and the muddy ground had become like a great mirror, showing only the reflection of the gray evening sky. The sun was behind clouds of grey; its warmth had long been forgotten. The castle of Abraham stood strong underneath the storm; its gray walls, now damp and black, were like frozen waves upon the fields of mud. They stood above the army that surrounded it now; soldiers' eyes glinted with fear.",
+        "linkLabel": "[More..]"
+      }
+    ]
+  },
+  "novel": {
+    "title": "Novel",
+    "items": [
+      {
+        "title": "A Crimson Sky",
+        "image": "sky.png",
+        "imageAlt": "A red and cream artwork titled A Crimson Sky.",
+        "route": "novel-chapter-list",
+        "description": "As he watched those drops slide down the window he couldn't shake the feelings it was the heavens themselves crying for his father, crying. Tears still hadn't taken to his eyes, each moment he thought it would be it, that the grief would catch up with him, but it had eluded him.",
+        "linkLabel": "[All Chapters..]"
+      }
+    ]
+  }
+}

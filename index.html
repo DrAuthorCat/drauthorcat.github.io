@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josiah Ferrer</title>
+    <meta name="description" content="Personal website for Josiah Ferrer, featuring short stories, novel excerpts, a CV, and contact links.">
+    <meta name="author" content="Josiah Ferrer">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://drauthorcat.github.io/">
+    <meta property="og:title" content="Josiah A. Ferrer">
+    <meta property="og:description" content="Personal website for Josiah Ferrer, featuring short stories, novel excerpts, a CV, and contact links.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drauthorcat.github.io/">
+    <meta property="og:image" content="https://drauthorcat.github.io/assets/img/profile.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/favicon.JPEG">
+    <script>
+      if (window.matchMedia("(max-width: 780px)").matches && !window.location.pathname.endsWith("/mobile.html")) {
+        window.location.replace("mobile.html");
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <main class="site" id="site">
+      <section class="column column-left" data-column="left">
+        <header class="column-header">
+          <span>Short Story</span>
+          <button class="menu-button" type="button" data-route-column="left" data-route-page="index" aria-label="Open short story index">
+            <span class="menu-icon" aria-hidden="true"></span>
+          </button>
+        </header>
+        <div class="panel-content" id="left-panel" tabindex="0"></div>
+      </section>
+
+      <section class="column column-middle" data-column="middle">
+        <header class="column-header" id="middle-header">
+          <span>Novel</span>
+          <button class="menu-button" type="button" data-route-column="middle" data-route-page="index" aria-label="Open novel index">
+            <span class="menu-icon" aria-hidden="true"></span>
+          </button>
+        </header>
+        <div class="panel-content" id="middle-panel" tabindex="0"></div>
+      </section>
+
+      <section class="column column-profile" data-column="profile">
+        <header class="column-header profile-title">
+          <span>About Me</span>
+        </header>
+        <div class="panel-content" id="profile-panel" tabindex="0"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Copyright &copy; 2026 J. Ferrer. All Rights Reserved</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
