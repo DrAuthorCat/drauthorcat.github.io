@@ -1,0 +1,234 @@
+:root {
+  --text: rgba(0, 0, 0, 0.85);
+  --muted: rgba(0, 0, 0, 0.55);
+  --faint: rgba(0, 0, 0, 0.36);
+  --line: rgba(0, 0, 0, 0.15);
+  --link: rgba(92, 25, 25, 0.85);
+  --reader-font: "Marist Variable", Georgia, "Times New Roman", serif;
+  --reader-body-size: 18px;
+  --reader-small-size: 13px;
+  --reader-line-height: 1.28;
+  --reader-width: 720px;
+}
+
+@font-face {
+  font-family: "Marist Variable";
+  src: url("../fonts/ABCMaristFlat975-Trial.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marist Variable";
+  src: url("../fonts/ABCMaristFlat975Italic-Trial.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 350;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  color: var(--text);
+  font-family: var(--reader-font);
+  font-size: var(--reader-body-size);
+  font-weight: 350;
+  font-synthesis: none;
+  line-height: var(--reader-line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: var(--line);
+}
+
+.reader-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.2rem;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.reader-brand,
+.reader-topbar nav,
+.reader-meta,
+.reader-summary,
+.reader-footer,
+.reader-pagination,
+.reader-kicker {
+  font-size: var(--reader-small-size);
+  line-height: 1.2;
+}
+
+.reader-topbar nav,
+.reader-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.reader-shell {
+  width: min(var(--reader-width), calc(100vw - 28px));
+  margin: 0 auto;
+  padding: 2.5rem 0 3.5rem;
+}
+
+.reader-article h1 {
+  margin: 0.3rem 0 0.75rem;
+  font-size: clamp(2rem, 7vw, 4.2rem);
+  font-weight: 350;
+  line-height: 0.95;
+}
+
+.reader-kicker,
+.reader-meta,
+.reader-summary {
+  color: var(--muted);
+}
+
+.reader-summary {
+  max-width: 36rem;
+  margin: 0 0 2rem;
+}
+
+.reader-content {
+  margin-top: 2rem;
+}
+
+.reader-content > column-set:first-child {
+  display: none;
+}
+
+.reader-content > column-set:first-child + hr {
+  display: none;
+}
+
+.reader-content column-set {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.reader-content column-unit {
+  display: block;
+  grid-column: span 6;
+  min-width: 0;
+}
+
+.reader-content column-unit[span="1"] {
+  grid-column: span 1;
+}
+
+.reader-content column-unit[span="2"] {
+  grid-column: span 2;
+}
+
+.reader-content column-unit[span="3"] {
+  grid-column: span 3;
+}
+
+.reader-content column-unit[span="4"] {
+  grid-column: span 4;
+}
+
+.reader-content column-unit[span="8"] {
+  grid-column: span 8;
+}
+
+.reader-content column-unit[span="9"] {
+  grid-column: span 9;
+}
+
+.reader-content column-unit[span="10"] {
+  grid-column: span 10;
+}
+
+.reader-content gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.cargo-media {
+  display: block;
+  margin: 0;
+}
+
+.cargo-media[data-grid-span="2"] {
+  grid-column: span 2;
+}
+
+.cargo-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.reader-pagination {
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.reader-footer {
+  width: min(var(--reader-width), calc(100vw - 28px));
+  margin: 0 auto;
+  padding: 0 0 1.2rem;
+  color: var(--faint);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --reader-body-size: 16px;
+  }
+
+  .reader-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .reader-shell {
+    padding-top: 1.5rem;
+  }
+
+  .reader-content column-set {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reader-content column-unit,
+  .reader-content column-unit[span] {
+    grid-column: 1;
+  }
+}
