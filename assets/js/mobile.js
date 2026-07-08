@@ -52,7 +52,7 @@ const routeMap = {
 function profileTemplate() {
   return `
     <div class="profile-grid">
-      <img class="profile-image" src="${asset("favicon.JPEG")}" alt="Fly artwork detail." style="max-width: 50px; max-height: 50px; width: auto; height: auto;">
+      <img class="profile-image" src="${asset("favicon.png")}" alt="Fly artwork detail." style="max-width: 50px; max-height: 50px; width: auto; height: auto;">
       <div class="profile-copy">
         Josiah Ferrer<br>
         <a href="mailto:hello@example.com">hello@example.com</a><br>
