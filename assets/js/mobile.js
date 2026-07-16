@@ -58,14 +58,30 @@ function profileTemplate() {
         <a href="mailto:hello@example.com">hello@example.com</a><br>
         <a href="https://substack.com/@drdumbcat?r=8ows3l&amp;utm_medium=ios&amp;utm_source=stories&amp;shareImageVariant=image" target="_blank" rel="noreferrer">Substack</a>
         <p>
-          Cras ut dictum mi. Sed quis lorem semper, elementum mauris vitae, consectetur orci.
-          Cras volutpat eget elit porta facilisis. Aenean fermentum arcu mauris, eu faucibus nisl
-          blandit ac. Proin eget euismod mauris. Quisque vulputate mauris quis tellus ultrices euismod.
-          Quisque eu purus convallis, gravida tortor sed, rutrum velit. Donec placerat pretium sem vel
-          lacinia. Maecenas elementum dolor at posuere auctor.<br>
-          <span class="indent"></span>Nullam mollis, turpis nec varius scelerisque, est est ornare enim,
-          sit amet facilisis ante metus posuere sapien. Curabitur nec sapien molestie, facilisis lacus
-          eget, egestas nunc. Vivamus mattis metus placerat vehicula ultricies.
+          I have been writing since childhood, when storytelling first became my way of turning
+          imagined worlds into something others could experience. What began as a fascination with
+          stories gradually developed into a lasting interest in worldbuilding, character development,
+          and the possibilities of speculative fiction.
+        </p>
+        <p>
+          Science fiction and fantasy quickly became my favorite creative spaces: places where
+          civilizations can rise and fall, even the smallest character can shake the foundations of a
+          kingdom, magic can follow rules as precise as the laws of physics while forming an intricate
+          network of countless possibilities, and the flap of a single butterfly's wings can change
+          everything. To me, writing is beautiful because it allows me to create entire worlds and
+          bring them to life in the minds of others. Through writing, I can achieve things that other
+          forms of art cannot. I have spent nearly every night, and much of my waking life, writing
+          and imagining. My life has become part of my stories, and my stories have become part of my life.
+        </p>
+        <p>
+          Games and books have continually expanded my imagination, but beyond fictional worlds, I
+          also draw inspiration from real life to make my stories feel grounded and emotionally
+          resonant. I especially enjoy traveling. My extended stays in countries and regions such as
+          Japan and Europe have exposed me to very different cultures and social environments, giving
+          me a broader perspective from which to construct fictional worlds. My current project,
+          <i>A Crimson Sky</i>, brings together the elements of storytelling that I enjoy most and an
+          idea that I have shaped and refined over time in the forge of my brain. I hope you enjoy
+          exploring the world of <i>A Crimson Sky</i>, along with my other short stories.
         </p>
         <nav class="mobile-menu" aria-label="Mobile navigation">
           <a href="#short-story" data-mobile-route="short-story">Short Story</a>
