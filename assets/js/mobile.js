@@ -4,7 +4,7 @@ const stage = document.getElementById("mobile-stage");
 const profileCard = document.getElementById("profile-card");
 const drawerCard = document.getElementById("drawer-card");
 const detailCard = document.getElementById("detail-card");
-const SHOW_CV = false;
+const SHOW_CV = true;
 
 const fragmentCache = new Map();
 let drawerContentPromise;
