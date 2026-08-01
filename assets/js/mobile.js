@@ -58,30 +58,23 @@ function profileTemplate() {
         <a href="mailto:hello@example.com">hello@example.com</a><br>
         <a href="https://substack.com/@drdumbcat?r=8ows3l&amp;utm_medium=ios&amp;utm_source=stories&amp;shareImageVariant=image" target="_blank" rel="noreferrer">Substack</a>
         <p>
-          I have been writing since childhood, when storytelling first became my way of turning
-          imagined worlds into something others could experience. What began as a fascination with
-          stories gradually developed into a lasting interest in worldbuilding, character development,
-          and the possibilities of speculative fiction.
+          Hello, I have been writing stories since I was a kid, and it has been a big part of my life.
+          I love sharing and coming up with new and interesting ideas. I mainly enjoy writing fantasy
+          and sci-fi, and my first book, <i>A Crimson Sky</i>, is currently in the works. Most of my
+          stories tend to lean into the reality of life, the fact that no one is ever safe, and as such,
+          most of my characters are never safe. However, I also enjoy stories on the completely opposite
+          end of the spectrum, otherworldly and fantastical in nature. I believe a blend makes the best
+          type of story.
         </p>
         <p>
-          Science fiction and fantasy quickly became my favorite creative spaces: places where
-          civilizations can rise and fall, even the smallest character can shake the foundations of a
-          kingdom, magic can follow rules as precise as the laws of physics while forming an intricate
-          network of countless possibilities, and the flap of a single butterfly's wings can change
-          everything. To me, writing is beautiful because it allows me to create entire worlds and
-          bring them to life in the minds of others. Through writing, I can achieve things that other
-          forms of art cannot. I have spent nearly every night, and much of my waking life, writing
-          and imagining. My life has become part of my stories, and my stories have become part of my life.
-        </p>
-        <p>
-          Games and books have continually expanded my imagination, but beyond fictional worlds, I
-          also draw inspiration from real life to make my stories feel grounded and emotionally
-          resonant. I especially enjoy traveling. My extended stays in countries and regions such as
-          Japan and Europe have exposed me to very different cultures and social environments, giving
-          me a broader perspective from which to construct fictional worlds. My current project,
-          <i>A Crimson Sky</i>, brings together the elements of storytelling that I enjoy most and an
-          idea that I have shaped and refined over time in the forge of my brain. I hope you enjoy
-          exploring the world of <i>A Crimson Sky</i>, along with my other short stories.
+          Outside of writing, I am a third-year college student studying applied physics. I have a deep
+          interest in and passion for physics, specifically high-energy particle physics. I love learning
+          more and attempting to understand what really makes up the world we live in. But like any good
+          story, things tend to connect, and my interest in science comes back to my writing. The world
+          itself, while the most realistic you can get and even boring at times, is, upon closer inspection,
+          home to a fantastical world that makes little to no sense, where everything is uncertain. Where
+          entire universes of complex interactions take place on a still table, on the sun, or even in a
+          glass of water.
         </p>
         <nav class="mobile-menu" aria-label="Mobile navigation">
           <a href="#short-story" data-mobile-route="short-story">Short Story</a>
