@@ -4,6 +4,7 @@ const stage = document.getElementById("mobile-stage");
 const profileCard = document.getElementById("profile-card");
 const drawerCard = document.getElementById("drawer-card");
 const detailCard = document.getElementById("detail-card");
+const SHOW_CV = false;
 
 const fragmentCache = new Map();
 let drawerContentPromise;
@@ -79,7 +80,7 @@ function profileTemplate() {
         <nav class="mobile-menu" aria-label="Mobile navigation">
           <a href="#short-story" data-mobile-route="short-story">Short Story</a>
           <a href="#novel" data-mobile-route="novel">Novel</a>
-          <a href="#cv" data-mobile-route="cv">CV</a>
+          ${SHOW_CV ? '<a href="#cv" data-mobile-route="cv">CV</a>' : ""}
         </nav>
       </div>
     </div>
@@ -137,14 +138,14 @@ function syncProfileHeight() {
 
 function hasOpenOverlay() {
   const route = normalizeRoute(location.hash);
-  return route === "short-story" || route === "novel" || route === "cv" || Boolean(fragmentForRoute(route));
+  return route === "short-story" || route === "novel" || (SHOW_CV && route === "cv") || Boolean(fragmentForRoute(route));
 }
 
 function currentOverlayElement() {
   const route = normalizeRoute(location.hash);
 
   if (route === "short-story" || route === "novel") return drawerCard;
-  if (route === "cv" || fragmentForRoute(route)) return detailCard;
+  if ((SHOW_CV && route === "cv") || fragmentForRoute(route)) return detailCard;
   return null;
 }
 
@@ -272,7 +273,7 @@ function fragmentForRoute(route) {
     "novel-chapter-1": "chapter-1",
     "novel-chapter-2": "chapter-2",
     "novel-chapter-2-copy": "chapter-2-copy",
-    cv: "cv",
+    cv: SHOW_CV ? "cv" : null,
   };
 
   return detailMap[route];
@@ -299,6 +300,11 @@ async function render() {
 
   drawerCard.innerHTML = "";
   detailCard.innerHTML = "";
+
+  if (!SHOW_CV && route === "cv") {
+    stage.dataset.view = "home";
+    return;
+  }
 
   if (route === "short-story" || route === "novel") {
     stage.dataset.view = route;
